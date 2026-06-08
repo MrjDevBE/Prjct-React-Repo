@@ -1,0 +1,120 @@
+/* Global Reset-like styles for the component container */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #E8E6FF;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Add this to your main CSS file */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #E8E6FF;
+}
+
+/* 2. ONLY use the root to center the application content */
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: #E8E6FF;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 300px;
+    box-shadow: 10px 10px 20px #c3c8d0, -10px -10px 20px #ffffff;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+    .tab-header button {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        background: #E8E6FF;
+        color: #555;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: inset 2px 2px 5px #c3c8d0, inset -2px -2px 5px #ffffff;
+        transition: 0.3s;
+        margin: 0 5px; /* Adds space between buttons */
+    }
+
+        .tab-header button.active {
+            background: #c7cfdb;
+            box-shadow: inset 2px 2px 5px #a0a8b3, inset -2px -2px 5px #ffffff;
+        }
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .form input {
+        margin: 10px 0;
+        padding: 10px;
+        color: #555;
+        border: none;
+        border-radius: 10px;
+        background: #E8E6FF;
+        box-shadow: inset 2px 2px 5px #c3c8d0, inset -2px -2px 5px #ffffff;
+        outline: none; /* Removes browser default blue outline */
+    }
+
+.submit-btn {
+    padding: 10px;
+    background: #E8E6FF;
+    color: #555;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #c3c8d0, -5px -5px 10px #ffffff;
+    transition: 0.2s;
+}
+
+    .submit-btn:active {
+        box-shadow: inset 2px 2px 5px #c3c8d0, inset -2px -2px 5px #ffffff;
+    }
+
+.or {
+    text-align: center;
+    margin: 15px 0 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social {
+    background: #E8E6FF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px #c3c8d0, -3px -3px 6px #ffffff;
+    transition: 0.2s;
+}
+
+    .social:hover {
+        transform: scale(1.1);
+        box-shadow: 4px 4px 8px #c3c8d0, -4px -4px 8px #ffffff;
+    }
